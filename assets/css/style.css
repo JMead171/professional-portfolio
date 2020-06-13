@@ -37,7 +37,6 @@ header h1 {
     margin: 0;
 }
 
-
 header a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -61,17 +60,24 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+header h2 {
+    font-weight: lighter;
+    font-size: 24px;
+    color: var(--secondary-color);
+    flex-basis: 100%;
+}
+
 .hero {
     background-image: url("../images/unsplash.jpg");
     background-position: bottom;
-    background-size: auto;
     height: 300px;
     margin-bottom: 15px;
     position: relative;
 }
 
-.hero h2 {
+.hero p {
     position: absolute;
+    font-size: 20px;
     bottom: 10px;
     right: 20px;
     font-style: italic;
@@ -96,16 +102,22 @@ header nav ul li a {
     align-items: left;
 }
 
-.about h2 {
+.about h3 {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 32px;
     margin: 0;
-    width: 200px;
+    width: 300px;
+}
+
+.about img {
+    margin: 0 80px;
+    width: 100px;
 }
 
 .about p {
     margin: 0;
     font-size: 18px;
+    width: 800px;
 }
 
 
@@ -117,44 +129,63 @@ header nav ul li a {
     align-items: left;
 }
 
-.work h2 {
+.mywork-grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px 200px;
+    grid-template-rows: 200x;
+    grid-gap: 15px;
+    grid-template-areas: "hd img1 img2";
+}
+
+.mywork-h2 {
     font-weight: bold;
-    font-size: 24px;
-    margin: 0;
+    font-size: 32px;
     width: 200px;
+    height: 300px;
 }
 
-.mywork-img {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+.mywork-grid1 a{
+    text-decoration: none;
 }
 
-.run-bud {
-    display: inline-block;
+.mywork-grid1 a h4{
+    text-align: center;
 }
 
-.run-bud img {
-    border: 3px solid black;
-    height: 200px;
-    float: left;
+.mywork-grid2 a{
+    text-decoration: none;
 }
 
-.hello-world img {
-    border: 3px solid black;
-    height: 200px;
-    width: 200px;
-    float: left;
+.mywork-grid3 a{
+    text-decoration: none;
 }
 
-.weather img {
-    border: 3px solid black;
-    height: 200px;
-    width: 200px;
-    float: left;
+.mywork-grid1 img {
+    grid-area: 400px;
+    height: 220px;
+    width: 400px;
+} 
+
+.mywork-grid2 img {
+    height: 100px;
+    width: 100px;
+} 
+
+.mywork-h2 {
+    grid-area: hd;
+    text-align : center;
 }
+
+.mywork-grid1 {
+    grid-area: img1;
+    align-items: left;
+}
+
+.mywork-grid2 {
+    grid-area: img2;
+    text-align : center;
+}
+
 
 footer {
     padding: 20px 35px;
@@ -167,54 +198,78 @@ footer {
 
 footer h2  {
     font-weight: bold;
-    font-size: 24px;
-    width: 200px;
+    font-size: 32px;
+    width: 300px;
     margin: 0;
 }
 
 footer p {
-    margin: 0;
-    width: 225px;
+    margin: 0 70px;
     font-size: 18px;
 } 
 
-footer p a {
-    margin: 5px, 0;
+footer a {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
     justify-content: space-between;
     font-size: 18px;
 }
-/*
-.page-title {
-    color:#fce138;
-    display: inline-block;
-    border-bottom: 4px solid #fce138;
-    padding: 0 80px 15px 80px;
-    font-weight: normal;
-    font-size: 42px;
-    font-style: italic;
-}
 
 
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    header {
+header {
         padding-bottom: 0;
         position: relative;
         justify-content: center;
+}
+    
+header h1 {
+        width: 100%;
+        text-align: center;
       }
-    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+    header nav ul li a {
+        font-size: 20px;
+      }
+    
+    .about img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
 
-    /* MEDIA QUERY FOR IPAD (SCREEN < 768PX) 
+    /*footer h2, footer div {
+        width: 100%;
+        text-align: center;
+      } */
+    
+/*    MEDIA QUERY FOR IPAD (SCREEN < 768PX)  */
 @media screen and (max-width: 768px) {
-    section {
-        padding-bottom: 30px 15px;
-      }
-    }
+    .mywork-grid-container {
+        grid-template-columns: 1fr 1fr;
+}
 
-/* MEDIA QUERY FOR MOBILE PHONES (SCREEN < 575PX) 
-@media screen and (max-width: 575px) {
-    .section-title {
-         width: 95%;
+    .about img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
       }
- */
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES (SCREEN < 575PX)
+@media screen and (max-width: 575px) {
+/*.section-title {
+        width: 95%;
+      }
+} */

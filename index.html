@@ -3,69 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
         <title>Jeff Mead / Software Developer</title>
     </head>
 
     <body>
         <!--navigation -->    
         <header>
-        <h1>JEFF MEAD</h1>
-        <h2>Software Developer</h2>
+        <h1>Jeff Mead</h1>
         <nav>
         <ul>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#my-work">My Work</a></li>
-            <li><a href="https://github.com/JMead171" target="_blank">Resume</a></li>
+            <li><a href="./assets/images/jmresume.pdf" target="_blank">Resume</a></li>
             <li><a href="#contact-me">Contact Me</a></li>
-        </ul>   
+        </ul>
         </nav>
+        <h2>Software Developer</h2>
     </header>
-
-
 
     <!-- Hero  -->
     <section class="hero">
         <div>
-            <h3>Ready to Enhance the Future</h3>
+            <p>Ready to Enhance the Future...</p>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about-me" class="section-title">
         <div class="about">
-            <h2>About Me</h2>
-            <p>
+            <h3>About Me</h3>
+            <img src="./assets/images/PhotoJM.jpg" alt="Photo of Jeff Mead"/>
+            <p>    
                 Accomplished Business Manager with over ten years of business operational experience.   Pursuing a position in software development with a professional organization that will challenge and use my talents and experience to benefit both mutual growth and success. 
             </p>
         </div>
     </Section>
 
-
-    <!-- "My Work Section -->
-    <section id="my-work" class="section-title">
-        <div class="mywork-img">
-            <div class="work">
-                <h2>My Work</h2>
+    <!-- "My Work Section using Grid -->
+    <section id="my-work">
+        <div class="mywork-grid-container">      
+            <div class="mywork-h2">My Work</div> 
+            <div class="mywork-grid1 grid-text">
+                <a href="https://jmead171.github.io/run-buddy"><img src="./assets/images/sneakers.jpg" alt="Sneakers">
+                <h4>Run Buddy</h4></a>
             </div>
-           
-            <div class="run-bud">      
-                <img src="./assets/images/sneakers.jpg" alt="Sneakers"/>
-                <h4>Run Buddy</h4>
-            </div>
-        
-            <div class="hello-world">      
-                <img src="./assets/images/world.jpg" alt="World"/>
-                <h4>Hello World</h4>
-            </div>
-            
-            <div class="weather">     
-                <img src="./assets/images/weather.jpg" alt="Lighting storm"/>
-                <h4>Weather</h4>
+             <div class="mywork-grid2">      
+                <a href="https://jmead171.github.io/hello-world"><img src="./assets/images/world.jpg" alt="World"/>
+                <h4>Hello World</h4></a>
+                <a href="https://www.weatherbug.com/weather-forecast/now/vero-beach-fl-32960"><img src="./assets/images/weather.jpg" alt="Lighting storm"/>
+                <h4>Weather</h4></a>
             </div>
         </div>
-
     </section>
-
 
        <!-- footer -->
     <footer id="contact-me" class="contact-me">
