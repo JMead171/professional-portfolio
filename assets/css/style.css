@@ -110,8 +110,9 @@ header h2 {
 }
 
 .about img {
-    margin: 0;
+    margin: 5px 5px;
     float: left;
+    height: 100px;
     width: 100px;
 }
 
@@ -293,17 +294,16 @@ footer a {
 
 /*    MEDIA QUERY FOR IPAD (SCREEN < 768PX)  */
 @media screen and (max-width: 768px) {
-.mywork-h2 {
-    font-size: 16px;
-    width: 75px;
-}
-
 .mywork-grid-container {
-    grid-template-columns: 1;
+    grid-template-columns: 175px 125px 125px;
 }
 
-   
+.mywork-grid1 img {
+    height: 100px;
+    width: 125px;
+ }
 
+}
 /* MEDIA QUERY FOR MOBILE PHONES (SCREEN < 575PX)
 @media screen and (max-width: 575px) {
 /*.section-title {
