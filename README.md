@@ -1,7 +1,7 @@
 # Name
 Professional Portfolio.
 
-# Description  How does it Work?  /  What does it Do?
+# Description
 
 This project is a professional portfolio website that showcases a developer's body of work.  The site includes the devloper's name, a recent photo and contact information.  It also includes a BIO, My Work section and a Contact section.
 
