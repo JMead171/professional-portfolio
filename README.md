@@ -21,7 +21,8 @@ This project is a professional portfolio website that showcases a developer's bo
 
 
 # Screen Shot
-![image](https://user-images.githubusercontent.com/64744763/84592535-5cef7f80-ae14-11ea-9f3b-30f7450c3474.png)
+![image](https://user-images.githubusercontent.com/64744763/84599924-92f82800-ae43-11ea-85f3-7cf4e13a6e94.png)
+
 
 # Technology Used
 HTML, CSS, CSS Grid and flexbox

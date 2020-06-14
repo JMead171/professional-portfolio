@@ -91,7 +91,7 @@ header h2 {
     padding: 20px 35px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
     align-items: left;
 }
@@ -107,8 +107,8 @@ header h2 {
 .about h3 {
     font-weight: bold;
     font-size: 32px;
-    text-align: cente;
     width: 300px;
+    margin: 0;
 }
 
 .about img {
@@ -121,7 +121,7 @@ header h2 {
 .about p {
     margin: 0;
     font-size: 18px;
-    width: 800px;
+    width: 1000px;
 }
 
 /* My Work Grid Style */
@@ -135,17 +135,17 @@ header h2 {
 
 .mywork-grid-container {
     display: grid;
-    grid-template-columns: 400px 400px 200px;
+    grid-template-columns:  400px 200px;
     grid-template-rows: 200x;
     grid-gap: 15px;
-    grid-template-areas: "hd img1 img2";
+    grid-template-areas: "img1 img2";
 }
 
-.mywork-h2 {
+.my-work h3 {
     font-weight: bold;
     font-size: 32px;
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    margin: 0;
 }
 
 .mywork-grid1 a{
@@ -175,11 +175,6 @@ header h2 {
     width: 100px;
 } 
 
-.mywork-h2 {
-    grid-area: hd;
-    text-align : center;
-}
-
 .mywork-grid1 {
     grid-area: img1;
     align-items: left;
@@ -199,7 +194,7 @@ footer {
     float: left;
 }
 
-footer h2  {
+footer h3  {
     font-weight: bold;
     font-size: 32px;
     width: 300px;
@@ -212,7 +207,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     float: left;
-    justify-content: space-between;
+    justify-content: left;
 } 
 
 footer a {
@@ -220,7 +215,7 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     float: left;
-    justify-content: space-between;
+    justify-content: left;
     font-size: 18px;
     text-decoration: none;
     color: var(--tertiary-color);
@@ -260,12 +255,6 @@ header nav ul li a {
     font-size: 20px;
 }
     
-.about img {
-    align-items: left;
-    width: 50px;
-    height: 50px;
-}
- 
 .about p {
     width: 100%;
     text-align: center;
@@ -277,7 +266,7 @@ header nav ul li a {
 }
 
 .mywork-grid-container {
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px;
 }
 
 .mywork-grid1 img {
@@ -289,21 +278,21 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
 }
 
 footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
 }    
 
 
 /*    MEDIA QUERY FOR IPAD (SCREEN < 768PX)  */
 @media only screen and (max-width: 768px) {
 .mywork-grid-container {
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 150px 150px;
 }
 
 }
@@ -314,14 +303,7 @@ footer a {
     display: grid;
     grid-template-columns: 150x;
     grid-template-rows: 200px;
-    grid-template-areas: "hd img1 img2";
-}
-
-.mywork-h2 {
-    font-weight: bold;
-    font-size: 32px;
-    width: 150px;
-    height: 200px;
+    grid-template-areas: "img1 img2";
 }
 
 .mywork-grid1 img {
@@ -334,11 +316,6 @@ footer a {
     width: 100px;
 } 
 
-.mywork-h2 {
-    grid-area: hd;
-    text-align : center;
-}
-
 .mywork-grid1 {
     grid-area: img1;
     align-items: center;
@@ -350,8 +327,5 @@ footer a {
 
 }
 
-.about img {
-    display: none;
-}
 
 }
