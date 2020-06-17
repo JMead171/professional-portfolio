@@ -17,7 +17,7 @@ This project is a professional portfolio website that showcases a developer's bo
 
  - The CSS uses media queries to resize the page for smaller screen viewing
 
- - All images uses appropraite alt="" attribute
+ - All images uses appropriate alt="" attribute
 
 
 # Screen Shot
