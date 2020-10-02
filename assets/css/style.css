@@ -124,14 +124,25 @@ header h3 a:hover {
 /* My Work Grid Style */
 .mywork-grid-container {
     display: grid;
-    grid-template-columns:  auto auto auto;
+    grid-template-columns:  auto auto auto auto;
     padding: 10px;
     grid-gap: 10px;
 }
 
+.mywork-grid1 {
+    display: inline-block;
+}
+
+.mywork-grid2 {
+    display: inline-block;
+}
+
 .mywork-grid-container img {
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
 
@@ -143,7 +154,7 @@ header h3 a:hover {
     color:darkblue;
     margin: 10px 0;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .mywork-grid-container h4:hover  {
